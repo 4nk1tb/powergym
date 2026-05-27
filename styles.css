@@ -1701,13 +1701,6 @@ select.form-control {
     width: 48px;
     height: 48px;
   }
-  /* Ajuste de radios para los SVG de 48px */
-  .timer-ring-bg, .timer-ring-progress {
-    cx: 24 !important;
-    cy: 24 !important;
-    r: 20 !important;
-    stroke-dasharray: 125.66 !important; /* 2 * PI * 20 */
-  }
   .timer-countdown {
     font-size: 0.75rem;
   }
