@@ -289,7 +289,13 @@ header.scrolled {
 .workout-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
+}
+
+#exercisesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem; /* Separación real y cómoda entre tarjetas de ejercicio */
 }
 
 .workout-day-title-row {
@@ -312,13 +318,19 @@ header.scrolled {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   padding: 1.25rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  transition: var(--transition-smooth);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-smooth);
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.15rem;
   position: relative;
   overflow: hidden;
+}
+
+.exercise-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .exercise-card::after {
@@ -336,9 +348,15 @@ header.scrolled {
   background-color: var(--brand);
 }
 
+.exercise-card.active-exercise {
+  border-color: rgba(204, 255, 0, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 15px rgba(204, 255, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
 .exercise-card.all-done-exercise {
   opacity: 0.85;
   border-color: rgba(0, 230, 118, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 230, 118, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .exercise-card.all-done-exercise::after {
@@ -359,7 +377,7 @@ header.scrolled {
 }
 
 .exercise-name {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--ink-secondary);
 }
@@ -373,7 +391,7 @@ header.scrolled {
 .badge {
   padding: 0.25rem 0.6rem;
   border-radius: 99px;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -388,7 +406,7 @@ header.scrolled {
 .badge-dark { background-color: var(--surface-base); color: var(--ink-muted); border: 1px solid var(--border-subtle); }
 
 .exercise-note {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--ink-muted);
   background-color: rgba(255, 255, 255, 0.02);
   border: 1px solid var(--border-subtle);
@@ -410,7 +428,7 @@ header.scrolled {
   background-color: var(--surface-base);
   color: var(--ink-secondary);
   font-family: var(--font-base);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   display: flex;
   flex-direction: column;
@@ -433,13 +451,13 @@ header.scrolled {
 }
 
 .set-btn .set-btn-num {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .set-btn .set-btn-status {
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   color: var(--ink-muted);
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 1px;
 }
 
@@ -491,7 +509,7 @@ header.scrolled {
   align-items: center;
   gap: 0.4rem;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--ink-secondary);
   cursor: pointer;
   transition: var(--transition-fast);
