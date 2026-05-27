@@ -1,0 +1,25 @@
+{
+  "name": "PowerGym — Rutina y Progreso de Fuerza",
+  "short_name": "PowerGym",
+  "description": "Tu diario de entrenamiento inteligente y de alto rendimiento. Registra cargas, mide tu 1RM y controla tu descanso sin conexión.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0B0C0E",
+  "theme_color": "#0B0C0E",
+  "orientation": "portrait-primary",
+  "categories": ["fitness", "sports", "utilities"],
+  "icons": [
+    {
+      "src": "https://4nk1tb.github.io/rutina-cliente1/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://4nk1tb.github.io/rutina-cliente1/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

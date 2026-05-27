@@ -1,0 +1,285 @@
+{
+  "days": [
+    {
+      "title": "Lunes • Espalda y Bíceps (Amplitud y Densidad)",
+      "exercises": [
+        {
+          "id": "dominadas_lastradas",
+          "name": "Dominadas lastradas",
+          "sets": 3,
+          "reps": "6-8",
+          "rir": "RIR 1-2",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Movimiento principal de tracción vertical para amplitud."
+        },
+        {
+          "id": "remo_maquina_cerrado",
+          "name": "Remo en máquina (codos pegados)",
+          "sets": 3,
+          "reps": "8-12",
+          "rir": "RIR 1-2",
+          "rest": "2’",
+          "timer": 2,
+          "note": "Enfoque total en el dorsal ancho."
+        },
+        {
+          "id": "remo_pesado_abierto",
+          "name": "Remo pesado barra o máquina (codos a 45º)",
+          "sets": 2,
+          "reps": "6-8",
+          "rir": "RIR 1-2",
+          "rest": "2’",
+          "timer": 2,
+          "note": "Codos abiertos para enfocar en la densidad de la espalda alta."
+        },
+        {
+          "id": "pullover_polea",
+          "name": "Pullover en polea alta",
+          "sets": 3,
+          "reps": "12-15",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Drop Set en la última serie (baja el peso un 20% tras el fallo y repite). Pausa arriba estirando al máximo."
+        },
+        {
+          "id": "curl_inclinado_manc",
+          "name": "Curl inclinado con mancuernas",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 0-1",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Brazos colgando para estirar el bíceps al máximo."
+        },
+        {
+          "id": "curl_predicador",
+          "name": "Curl predicador",
+          "sets": 3,
+          "reps": "8-10",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Rest-Pause en la última serie (al fallar, descansa 15s y saca las que puedas)."
+        }
+      ]
+    },
+    {
+      "title": "Martes • Piernas (Femorales y Glúteo)",
+      "exercises": [
+        {
+          "id": "curl_femoral_sentado",
+          "name": "Curl femoral sentado",
+          "sets": 4,
+          "reps": "10-12",
+          "rir": "RIR 0",
+          "rest": "2’",
+          "timer": 2,
+          "note": "Rest-Pause en la última serie (falla, descansa 15s y repite al fallo). Posición de máximo estiramiento."
+        },
+        {
+          "id": "pmr_mancuernas",
+          "name": "Peso muerto rumano con mancuernas",
+          "sets": 3,
+          "reps": "8-10",
+          "rir": "RIR 1-2",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Rodillas semi-flexionadas y fijas. Empuja la cadera hacia atrás."
+        },
+        {
+          "id": "extension_cadera_gluteo",
+          "name": "Hiperextensión inversa o Extensión de cadera en polea",
+          "sets": 4,
+          "reps": "8-12",
+          "rir": "RIR 0-1",
+          "rest": "2’",
+          "timer": 2,
+          "note": "Sustituto del Hip Thrust para evitar dolor en el pubis. Aislamiento puro de glúteo mayor."
+        },
+        {
+          "id": "prensa_pies_altos",
+          "name": "Prensa pies altos y separados",
+          "sets": 3,
+          "reps": "10-15",
+          "rir": "RIR 1-2",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Rango de movimiento libre de dolor. Tensión en glúteos e isquios."
+        }
+      ]
+    },
+    {
+      "title": "Miércoles • Pecho y Hombro Lateral (Intensidad)",
+      "exercises": [
+        {
+          "id": "press_inclinado_maq",
+          "name": "Press Inclinado en Máquina",
+          "sets": 3,
+          "reps": "8-10",
+          "rir": "RIR 0-1",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Ejercicio de fuerza principal. Sin inestabilidades."
+        },
+        {
+          "id": "press_plano_maq",
+          "name": "Press Plano en Máquina convergente",
+          "sets": 3,
+          "reps": "8-10",
+          "rir": "RIR 0",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Rest-Pause en la última serie (20 segundos de descanso tras el fallo y volver a empujar hasta el fallo absoluto)."
+        },
+        {
+          "id": "aperturas_polea",
+          "name": "Aperturas en polea",
+          "sets": 3,
+          "reps": "12-15",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Drop Set en la última serie. Énfasis en estirar el pectoral un par de segundos en cada repetición."
+        },
+        {
+          "id": "elevaciones_laterales",
+          "name": "Elevaciones laterales en polea",
+          "sets": 4,
+          "reps": "12-15",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Drop Set en la última serie. Tensión constante gracias al cable."
+        }
+      ]
+    },
+    {
+      "title": "Jueves • Brazos Mutantes y Espalda (Volumen)",
+      "exercises": [
+        {
+          "id": "remo_apoyo_pecho",
+          "name": "Remo con apoyo en pecho",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 1-2",
+          "rest": "2’",
+          "timer": 2,
+          "note": "Espalda ligera, protege la zona lumbar."
+        },
+        {
+          "id": "jalon_neutro",
+          "name": "Jalón agarre neutro",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 1-2",
+          "rest": "2’",
+          "timer": 2
+        },
+        {
+          "id": "curl_polea_baja",
+          "name": "Curl en polea baja barra recta",
+          "sets": 3,
+          "reps": "8-10",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Rest-Pause en la última serie para hipertrofia por estrés metabólico."
+        },
+        {
+          "id": "curl_martillo",
+          "name": "Curl martillo con mancuernas",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 0-1",
+          "rest": "90”",
+          "timer": 1.5
+        },
+        {
+          "id": "triceps_overhead",
+          "name": "Extensión overhead en polea (cabeza larga)",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Rest-Pause en la última serie. Músculo trabajado en estiramiento."
+        },
+        {
+          "id": "triceps_pushdown",
+          "name": "Pushdown de tríceps en polea",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 0-1",
+          "rest": "90”",
+          "timer": 1.5
+        }
+      ]
+    },
+    {
+      "title": "Viernes • Cuádriceps, Gemelos y Pecho Secundario",
+      "exercises": [
+        {
+          "id": "fondos_lastrados",
+          "name": "Fondos lastrados (Pecho secundario)",
+          "sets": 3,
+          "reps": "6-10",
+          "rir": "RIR 1-2",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Primer ejercicio estando fresco. Torso inclinado hacia adelante, bajando máximo hasta los 90 grados para proteger la cápsula del hombro."
+        },
+        {
+          "id": "leg_extension",
+          "name": "Extensión de cuádriceps",
+          "sets": 4,
+          "reps": "12-15",
+          "rir": "RIR 0",
+          "rest": "2’",
+          "timer": 2,
+          "note": "Drop Set en la última serie. Aguanta 1 segundo la contracción arriba."
+        },
+        {
+          "id": "hack_squat",
+          "name": "Hack Squat",
+          "sets": 3,
+          "reps": "8-10",
+          "rir": "RIR 1-2",
+          "rest": "2-3’",
+          "timer": 2.5,
+          "note": "Baja solo hasta un rango libre de dolor usando tu rodillera apretada."
+        },
+        {
+          "id": "curl_femoral_acostado",
+          "name": "Curl femoral acostado",
+          "sets": 3,
+          "reps": "10-12",
+          "rir": "RIR 1",
+          "rest": "90”",
+          "timer": 1.5
+        },
+        {
+          "id": "abduccion_polea",
+          "name": "Abducción en polea baja",
+          "sets": 3,
+          "reps": "15",
+          "rir": "RIR 0-1",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "El trabajo ideal de glúteo medio para tu anatomía sin máquina específica."
+        },
+        {
+          "id": "gemelos_pie",
+          "name": "Gemelos de pie",
+          "sets": 4,
+          "reps": "12-15",
+          "rir": "RIR 0",
+          "rest": "90”",
+          "timer": 1.5,
+          "note": "Rest-Pause en la última serie. Pausa de 1 a 2 segundos abajo estirando el gemelo antes de subir."
+        }
+      ]
+    }
+  ]
+}
