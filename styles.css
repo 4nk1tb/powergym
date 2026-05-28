@@ -258,6 +258,7 @@ header.scrolled {
   width: 100%;
   margin: 0 auto;
   padding: 1.25rem 1.25rem;
+  min-height: calc(100vh - 140px); /* Garantiza una altura mínima estable para evitar saltos del menú en iOS */
 }
 
 .app-page {
