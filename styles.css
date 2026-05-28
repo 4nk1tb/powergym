@@ -65,9 +65,15 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
+html {
   width: 100%;
   height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
   background-color: var(--bg-app);
   background-image: var(--bg-app-noise);
   color: var(--ink);
@@ -77,12 +83,9 @@ html, body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-}
-
-body {
   display: flex;
   flex-direction: column;
-  padding-bottom: calc(75px + env(safe-area-inset-bottom)); /* Espacio para barra nav inferior */
+  padding-bottom: calc(85px + env(safe-area-inset-bottom)); /* Espacio holgado e idéntico para la barra inferior */
 }
 
 /* Scrollbar Personalizado */
@@ -1479,15 +1482,15 @@ select.form-control {
   bottom: 0;
   left: 0;
   right: 0;
-  height: calc(58px + env(safe-area-inset-bottom));
+  height: calc(60px + env(safe-area-inset-bottom));
   background-color: rgba(18, 19, 22, 0.92);
-  backdrop-filter: saturate(1.5) blur(20px);
-  -webkit-backdrop-filter: saturate(1.5) blur(20px);
+  backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
   border-top: 1px solid var(--border-subtle);
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  z-index: 800;
+  z-index: 1000;
   padding-bottom: env(safe-area-inset-bottom);
   box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
 }
@@ -1504,7 +1507,7 @@ select.form-control {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  height: 58px;
+  padding-top: 8px;
   cursor: pointer;
   transition: color var(--transition-fast);
   gap: 2px;
