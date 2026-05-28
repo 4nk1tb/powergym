@@ -163,6 +163,19 @@
   // Variables para Temporizador Global
   let activeTimer = null; // { iv, left, total, running, exId, exName }
   let audioCtx = null;    // Lazy Web Audio API context
+  let wakeLock = null;    // Referencia para mantener pantalla encendida
+
+  // Mantener la pantalla encendida durante el entrenamiento (Wake Lock)
+  async function requestWakeLock() {
+    try {
+      if ("wakeLock" in navigator && !wakeLock) {
+        wakeLock = await navigator.wakeLock.request("screen");
+        console.log("PowerGym: Pantalla siempre encendida (Wake Lock activo)");
+      }
+    } catch (err) {
+      console.warn("Fallo al activar Wake Lock:", err);
+    }
+  }
 
   // ==========================================================================
   // 3. Inicialización del Estado y Almacenamiento
@@ -1643,6 +1656,16 @@
     initDOM();
     loadState();
     
+    // Mantener la pantalla encendida (Wake Lock) al arrancar y al volver del segundo plano
+    requestWakeLock();
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        requestWakeLock();
+      } else {
+        wakeLock = null; // Reiniciar referencia para cuando vuelva
+      }
+    });
+    
     // Renderizado Inicial
     renderDayTabs();
     renderActiveDayRoutine();
@@ -1670,7 +1693,22 @@
       if (btn) switchPage(btn.dataset.page);
     });
 
-    dom.headerBranding.onclick = () => switchPage("page-routine");
+    let brandingClicks = 0;
+    let brandingClicksTimeout;
+    dom.headerBranding.onclick = () => {
+      switchPage("page-routine");
+      
+      brandingClicks++;
+      clearTimeout(brandingClicksTimeout);
+      brandingClicksTimeout = setTimeout(() => { brandingClicks = 0; }, 3000);
+      
+      if (brandingClicks >= 5) {
+        brandingClicks = 0;
+        triggerVibration();
+        handleExportJSON();
+        showNotification("🔑 ¡Huevo de Pascua! Descargando copia de seguridad...");
+      }
+    };
     dom.btnProgressDesktop.onclick = () => switchPage("page-progress");
     dom.btnSettingsDesktop.onclick = () => switchPage("page-settings");
     dom.btnResetDayDesktop.onclick = resetCurrentDay;
