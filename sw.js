@@ -1,4 +1,4 @@
-const CACHE_NAME = "powergym-v2";
+const CACHE_NAME = "powergym-v2.5";
 
 const ASSETS_TO_CACHE = [
   "./",
